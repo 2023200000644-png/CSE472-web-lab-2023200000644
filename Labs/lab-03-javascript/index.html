@@ -27,16 +27,46 @@
     <h2>About the Event</h2>
 
     <div>
-        <p>This event is organized for students interested in
-        <span>technology, programming and innovation.</span></p>
+        <p>
+            This event is organized for students interested in
+            <span>technology, programming and innovation.</span>
+        </p>
 
-        <p>Visit <a href="https://seu.edu.bd/">Southeast University</a> for more information.</p>
+        <p>
+            Visit
+            <a href="https://seu.edu.bd/">Southeast University</a>
+            for more information.
+        </p>
 
-        <img src="images/campus.jpg" alt="Southeast University campus" width="350">
+        <img src="images/campus.jpg"
+             alt="Southeast University campus"
+             width="350">
     </div>
+
+    <h3>Registration Status</h3>
+
+    <button type="button" onclick="checkRegistration()">
+        Check Registration Status
+    </button>
+
+    <p id="registrationStatus">
+        Click the button to check the status.
+    </p>
+
+    <h3>Seat Availability</h3>
+
+    <button type="button" onclick="checkSeats()">
+        Check Seat Availability
+    </button>
+
+    <p id="seatMessage">
+        Seat information will appear here.
+    </p>
+
 </section>
 
 <section id="topics">
+
     <h2>Event Topics</h2>
 
     <ul>
@@ -56,7 +86,8 @@
     <h3>Activities</h3>
 
     <ul>
-        <li>Workshop
+        <li>
+            Workshop
             <ul>
                 <li>HTML and CSS</li>
                 <li>Programming</li>
@@ -64,12 +95,15 @@
         </li>
         <li>Seminar</li>
     </ul>
+
 </section>
 
 <section id="schedule">
+
     <h2>Event Schedule</h2>
 
     <table border="1">
+
         <tr>
             <th>Day</th>
             <th>Time</th>
@@ -99,37 +133,17 @@
             <td>01:00 PM</td>
             <td>Artificial Intelligence</td>
         </tr>
+
     </table>
-</section>
 
-<section>
-    <h2>Registration Status</h2>
-
-    <button type="button" onclick="checkRegistration()">
-        Check Registration Status
-    </button>
-
-    <p id="registrationStatus">
-        Click the button to check the status.
-    </p>
-</section>
-
-<section>
-    <h2>Seat Availability</h2>
-
-    <button type="button" onclick="checkSeats()">
-        Check Seat Availability
-    </button>
-
-    <p id="seatMessage">
-        Seat information will appear here.
-    </p>
 </section>
 
 <section id="register">
+
     <h2>Registration</h2>
 
     <form>
+
         <label>Full Name:</label>
         <input type="text" id="studentName">
 
@@ -151,27 +165,47 @@
         <br><br>
 
         <label>Participation:</label>
-        <input type="radio" name="mode"> Online
-        <input type="radio" name="mode"> On Campus
+
+        <input type="radio" name="mode">
+        Online
+
+        <input type="radio" name="mode">
+        On Campus
 
         <br><br>
 
         <label>Activities:</label>
-        <input type="checkbox"> Workshop
-        <input type="checkbox"> Seminar
+
+        <input type="checkbox">
+        Workshop
+
+        <input type="checkbox">
+        Seminar
 
         <br><br>
 
-        <button type="submit">Register</button>
-
-        <br><br>
-
-        <button type="button" onclick="showGreeting()">
-            Show Greeting
+        <button type="submit">
+            Register
         </button>
 
-        <p id="greetingMessage"></p>
     </form>
+
+    <br>
+
+    <button type="button" onclick="showGreeting()">
+        Show Greeting
+    </button>
+
+    <p id="greetingMessage"></p>
+
+    <br>
+
+    <button type="button" onclick="showReminder()">
+        Workshop Reminder
+    </button>
+
+    <p id="reminderMessage"></p>
+
 </section>
 
 </main>

@@ -1,4 +1,4 @@
-let availableSeats = 17;
+let availableSeats = 12;
 
 function checkRegistration() {
     let message = document.getElementById("registrationStatus");
@@ -22,4 +22,10 @@ function showGreeting() {
     let output = document.getElementById("greetingMessage");
 
     output.textContent = "Welcome, " + name + "!";
+}
+
+function showReminder() {
+    let message = document.getElementById("reminderMessage");
+
+    message.textContent = "Please arrive 10 minutes early.";
 }
