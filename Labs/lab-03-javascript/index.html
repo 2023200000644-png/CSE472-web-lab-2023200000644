@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEU Tech Event Information and Registration Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>SEU Tech Event</h1>
+    <p>Join our technology event at SEU.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#topics">Topics</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#register">Register</a>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About the Event</h2>
+
+    <div>
+        <p>This event is organized for students interested in
+        <span>technology, programming and innovation.</span></p>
+
+        <p>Visit <a href="https://seu.edu.bd/">Southeast University</a> for more information.</p>
+
+        <img src="images/campus.jpg" alt="Southeast University campus" width="350">
+    </div>
+</section>
+
+<section id="topics">
+    <h2>Event Topics</h2>
+
+    <ul>
+        <li>Web Development</li>
+        <li>Programming</li>
+        <li>Artificial Intelligence</li>
+    </ul>
+
+    <h3>Steps to Participate</h3>
+
+    <ol>
+        <li>Register online</li>
+        <li>Attend the event</li>
+        <li>Join the sessions</li>
+    </ol>
+
+    <h3>Activities</h3>
+
+    <ul>
+        <li>Workshop
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Programming</li>
+            </ul>
+        </li>
+        <li>Seminar</li>
+    </ul>
+</section>
+
+<section id="schedule">
+    <h2>Event Schedule</h2>
+
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Topic</th>
+        </tr>
+
+        <tr>
+            <td>Sunday</td>
+            <td>10:00 AM</td>
+            <td>Opening</td>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>11:00 AM</td>
+            <td>Web Development</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>12:00 PM</td>
+            <td>Programming</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>01:00 PM</td>
+            <td>Artificial Intelligence</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Registration Status</h2>
+
+    <button type="button" onclick="checkRegistration()">
+        Check Registration Status
+    </button>
+
+    <p id="registrationStatus">
+        Click the button to check the status.
+    </p>
+</section>
+
+<section>
+    <h2>Seat Availability</h2>
+
+    <button type="button" onclick="checkSeats()">
+        Check Seat Availability
+    </button>
+
+    <p id="seatMessage">
+        Seat information will appear here.
+    </p>
+</section>
+
+<section id="register">
+    <h2>Registration</h2>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" id="studentName">
+
+        <br><br>
+
+        <label>Student ID:</label>
+        <input type="text">
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email">
+
+        <br><br>
+
+        <label>Preferred Date:</label>
+        <input type="date">
+
+        <br><br>
+
+        <label>Participation:</label>
+        <input type="radio" name="mode"> Online
+        <input type="radio" name="mode"> On Campus
+
+        <br><br>
+
+        <label>Activities:</label>
+        <input type="checkbox"> Workshop
+        <input type="checkbox"> Seminar
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+        <br><br>
+
+        <button type="button" onclick="showGreeting()">
+            Show Greeting
+        </button>
+
+        <p id="greetingMessage"></p>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>SEU Tech Event</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

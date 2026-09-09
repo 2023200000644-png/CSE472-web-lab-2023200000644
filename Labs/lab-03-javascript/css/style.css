@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: skyblue;
+    padding: 20px;
+    color: black;
+}
+
+nav {
+    text-align: center;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+nav a {
+    margin: 10px;
+    color: black;
+}
+
+section {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+     background-color: skyblue;
+}
